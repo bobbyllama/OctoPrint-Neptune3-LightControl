@@ -1,0 +1,58 @@
+#navbar_plugin_neptune3_lightcontrol .lc-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+}
+
+#navbar_plugin_neptune3_lightcontrol .lc-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: .25rem .55rem;
+  border-radius: .35rem;
+  border: 1px solid rgba(255,255,255,.15);
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s ease, filter 0.2s ease;
+}
+
+#navbar_plugin_neptune3_lightcontrol .lc-btn.busy {
+  opacity: .6;
+  pointer-events: none;
+}
+
+#navbar_plugin_neptune3_lightcontrol .lc-btn .fa {
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #ffd86b; /* lit bulb */
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+#navbar_plugin_neptune3_lightcontrol .lc-btn .fa-lightbulb-o {
+  color: #777; /* unlit bulb */
+}
+
+/* hover effects */
+#navbar_plugin_neptune3_lightcontrol .lc-btn:hover .fa-lightbulb {
+  color: #ffe97f;
+  text-shadow: 0 0 6px rgba(255, 216, 107, 0.8);
+}
+#navbar_plugin_neptune3_lightcontrol .lc-btn:hover .fa-lightbulb-o {
+  color: #aaa;
+}
+
+/* tiny numeric input */
+#navbar_plugin_neptune3_lightcontrol .lc-pwm {
+  width: 2.2rem;          /* ~3 chars */
+  padding: .15rem .3rem;
+  border-radius: .3rem;
+  border: 1px solid rgba(255,255,255,.2);
+  background: transparent;
+  color: inherit;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+#navbar_plugin_neptune3_lightcontrol .lc-pwm::-webkit-outer-spin-button,
+#navbar_plugin_neptune3_lightcontrol .lc-pwm::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

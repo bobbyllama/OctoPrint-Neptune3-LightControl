@@ -1,0 +1,15 @@
+<div id="navbar_plugin_neptune3_lightcontrol" class="navbar-plugin" data-bind="visible: loginState.isUser()">
+  <div class="lc-wrap">
+    <a class="lc-btn" data-bind="click: toggle, css: { busy: isBusy }" title="Toggle Light">
+      <i class="fa" data-bind="css: { 'fa-lightbulb-o': !isOn(), 'fa-lightbulb': isOn() }"></i>
+    </a>
+    <input
+      class="lc-pwm"
+      type="text"
+      maxlength="3"
+      placeholder="255"
+      data-bind="value: pwmValue, event: { input: onPwmInput }"
+      title="Brightness (0–255)"
+    />
+  </div>
+</div>
